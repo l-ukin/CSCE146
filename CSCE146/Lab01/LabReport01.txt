@@ -1,0 +1,31 @@
+LabReport01
+
+1. Problem: We have an unsorted array of Strings that needs to be sorted in three different ways: once by the number of vowels in each String, once by the number of consonants in each String, and once by the length of each String.
+
+2. Solution Description: My code solves the problem by copying the inputted array into a new array and using a bubble-sort with the correct inputs to sort that new array. For the vowel and consonant sort, it uses a countLetters method to count the amount of vowels and consonants in each word, then uses that integer for the sorting. For the length sort, it simply uses the .length() method for the sorting.
+
+3. Problems Encountered: Originally, I couldn't quite figure out how to make it easily and efficiently count the vowels and consonants, but after giving it some thought I discovered that I could count them at the same time in a separate method. I also had to refamiliarize myself with some CSCE 145 concepts that I had forgotten.
+
+4. One major advantage of using an array is that it allows for more efficient storing due to arrays' low memory use.
+
+5. One major disadvantage of using an array is that it has a set, unchangeable number of elements within it.
+
+6. Valid indices for an array begin at 0 and end at the length of the array, minus one. For example, an array of length 7 has valid indices from all integers 0 through 6.
+
+7. This code is not error-free. It will give an out-of-bounds error during the first for-loop when it attempts to access at index 26, which does not exist. To fix this, the "<=" should be replaced with "<".
+
+8. This code is not error-free. It will incorrectly count the number of values divisible by 5, as the code will only count 80 as being divisible by 4, and not by 5. To fix this, the else-if should be removed and replaced with just a regular if-statement.
+
+9. This code does not work properly because it is attempting to assign ret to the same object as array, which it cannot do. To fix this, they should use a for-loop to loop through and copy each element of array to ret.
+
+10. This code is error-free and will print the following:
+1.0
+2.0
+3.0
+4.0
+5.0
+2.0
+4.0
+6.0
+8.0
+10.0

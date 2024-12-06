@@ -1,0 +1,11 @@
+1. Problem: In this lab, we are to create three classes that allow us to make a Linked Binary Search Tree of Fruit objects, and then run various actions on that tree.
+2. Solution: I started with the LinkedBST.java class, allowing for the tree to be created, then the Fruit.java class, allowing fruits to be made, then the FruitTreeTester.java class to test everything.
+3. Problems Encountered: I was having an error where it would say "type argument Fruit is not within bounds of type-variable T" when creating my tree. I never found how to fix this error, as every solution I came up with caused another problem to arise.
+4. A self-balancing tree has O(log(n)) and a non-self-balancing tree has O(n). This means a self-balancing tree is more efficient to use. A self-balancing tree also ensures that a tree isn't "lopsided" if you were to draw it out.
+5. O(log(n))
+6. O(n)
+9.
+Pre: 8, 2, 1, 4, 12, 10, 16
+In: 1, 2, 4, 8, 12, 10, 16
+Post: 1, 4, 10, 16, 2, 12, 8
+10. This will not work properly because it doesn't recursively traverse the tree. It will take only the inputted node and its children. It also won't work because the findSum() method without parameters doesn't call the findSum(Node aNode) method with parameters.

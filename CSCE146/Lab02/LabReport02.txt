@@ -1,0 +1,19 @@
+1. Problem: There are two main problems in this lab. One is changing instances of "is" to "was" in a text file, then outputting that result into a new text file. The other is calculating the total volume from a text file with a bunch of values in it.
+
+2. Solution Description: To solve the first problem, I create an array with every word in the original text file, then check each word for if it is "is." Then, it replaces every instance of "is" with "was," without breaking words like "visit" or "ism." Finally, this array is re-assembled into a new text file. To solve the second problem, I create an array with every value in the inputted file, then I read through it and skip over unnecessary data, only using the numbers actually needed and calculating with them before outputting the total volume.
+
+3. Problems Encountered: When solving the first problem, I was struggling with trying to write into a new file, so I had to look up some help on how to do that. I also ran into problems with separating the values into an array that went word-by-word, but eventually figured it out.
+
+4. An absolute file path describes absolutely where a file is on a single device (ex. C:\Users\lukin\OneDrive\Desktop\VS Folder\CSCE146\Lab02\LabReport02). A relative path describes where a file is relatively to another folder (ex. .\LabReport02).
+
+5. "./" means the current folder
+
+6. They are to be placed in the project's root folder
+
+7. Close the file reader / writer
+
+8. Delimiters / separators in file formats separate data in a file. In this example, a delimiter of tabs, spaces, and new lines allowed me to split up text files word-by-word.
+
+9. Use nextLine() instead of next(), this will make it read line-by-line instead of word-by-word.
+
+10. The FileOutputStream constructor accepts a Boolean parameter for whether or not you would like to append to a file, rather than overwrite it. To fix the problem, add 'true' as a second parameter for the new FileOutputStream.

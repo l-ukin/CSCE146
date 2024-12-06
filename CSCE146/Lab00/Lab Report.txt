@@ -1,0 +1,29 @@
+1. Lab Solutions are 10%, Lab Reports are 10%, and Homeworks are 80% of the final grade. The final exam replaces a lower score on a homework assignment, making it 10% of the grade.
+
+2. Assignments are to be submitted on Dropbox, along with their grades and feedback.
+
+3. Late work is not accepted, and no credit will be given for late work. Emergency-only exceptions are allowed. Make-up work can be requested before the assignment is due, but only once per assignment type (1 homework, 1 lab report, 1 lab solution). Regrade requests can only be made within one week of the assignment being graded, and are to be done through email.
+
+4. True
+
+5. The source code with the extension .java
+
+6. Bytecode
+
+7. It will print 1024
+
+8. It will print:
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+
+9. Nothing will print because j is always greater than 0.0, so the while-loop never runs. To fix this issue, the "<" in the while-loop should be changed to ">".
+
+10. It will print BD.

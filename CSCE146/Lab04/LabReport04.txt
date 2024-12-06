@@ -1,0 +1,19 @@
+1. Problem: I must create a double linked list of doubles with various different methods within it.
+
+2. Solution Description: I started with a base GenLL that I made previously, then tweaked it to include methods that were needed for this lab.
+
+3. Problems Encountered: I was having issues with my current node going outside of the list, then breaking everything. I had to individually check all of my methods to ensure they weren't going outside of the list and go through a lot of debugging to eventually get them to stay within the boundaries. I was also having an issue where my contains method wasn't functioning properly, which made all of the tests invalid when they were working perfectly fine.
+
+4. The JVM will remove it from memory.
+
+5. A linked list has the advantage of having no limit on the amount of items it can store, but the disadvantage of not having random access (i.e, you cannot get "item #4" without sequentially going through all of the items before and/or after it)
+
+6. An advantage of doubly linked lists is that it's much easier to traverse the list by allowing a second direction to move in. A disadvantage of it is the extra memory used to store a second link.
+
+7. This method does not work as intended. First, it prints the node itself rather than the value. Second, it never goes to the next node, so it loops forever. In order to make it work, System.out.println(temp); should be changed to System.out.println(temp.data); and temp = temp.link; needs to be added to the end, inside of the while loop.
+
+8. This method will work intended, however, every String in the example list is the same length, so technically it could spit back out any of the Strings and it would be correct. In this case, it will print "Abc".
+
+9. This method does not work as intended. temp is of type ListNode and rValue is of type String, so you cannot set temp = rValue. Instead, temp = rValue; should be replaced with temp.data = rValue;
+
+10. This method does not work as intended. Nothing is actually being reassigned except for the temporary link, therefore nothing is being deleted. To fix this problem, add head = temp; to the end, outside of the loop.

@@ -1,0 +1,10 @@
+1. Problem: This lab's problem is creating two classes, one called GroceryItem that creates an object with two instance variables, name and value, and one called GroceryList, which creates a singly-linked list of GroceryItem objects. In both of those classes, various different methods need to be made.
+2. Solution Description: My code successfully creates the linked list, with all working methods and constructors. It uses recycled code from my own previously created GenLL class with some slight modifications to ensure the list properly does as requested.
+3. Problems Encountered: I realized after finishing it that I had accidentally forgotten the equals method in my GroceryItem class, which made the tester fail. I then created the method, and everything worked.
+4. A linked list allows for easy expansion and removal of elements in the list, unlike an array.
+5. An array allows for random access, unlike a linked list.
+6. This code doesn't work because temp never moves to the next element in the list. temp = temp.link; needs to be added after the if-statement.
+7. It deletes every other value because the new head node is linked to nothing. To fix this, null should be replaced with head.
+8. It doesn't delete anything because it never changes head. To fix this, simply change the method to only contain head = head.link;
+9. It results in a NullPointerException because it's trying to access and point to something that equals null. To fix this, instead of using temp != null, it should use temp.link != null.
+10. It returns 24 because it never multiplies by 5. To fix this, change temp.link != null to temp != null.

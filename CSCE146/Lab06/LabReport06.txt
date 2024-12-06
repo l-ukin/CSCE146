@@ -1,0 +1,10 @@
+1. Problem: In this lab, I had to create a class that would take in strings and then sort them based off of how many times "sort" (case insensitive) appeared in the strings.
+2. Solution Description: The first thing I created was the main method, then I made slight changes to my GenLL class to ensure it would work properly for this lab, then I made the mergeSort and merge methods as well as the numOf method to make sure that the strings could be checked properly. Only the main would have to be changed in order to change what word we're searching for (in case we wanted to sort by a word that isn't "sort").
+3. Problems Encountered: I made a silly mistake in my convertToArray method that was causing one of the strings to be deleted, but I found the error and fixed it after a couple of minutes of debugging.
+4. Yes because f(n) is always less than n^2 for n>0.
+5. No because f(n) is not always less than n^3 for n>0.
+6. No because f(n) is not always less than 2^n for n>0.
+7. O(n^2)
+8. O(n^2)
+9. O(nlog(n))
+10. Merge sort would be more efficient because nlog(n) is always a lower value than n^2, for any n>0.
